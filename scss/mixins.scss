@@ -1,0 +1,61 @@
+/* ********* mixins ********** */
+@mixin fontMuseo100($size, $lineHeight) {
+  font-family: "MuseoSansCyrl100";
+  font-size: $size;
+  line-height: $lineHeight;
+}
+@mixin fontMuseo300($size, $lineHeight) {
+  font-family: "MuseoSansCyrl300";
+  font-size: $size;
+  line-height: $lineHeight;
+}
+@mixin fontMuseo300Italic($size, $lineHeight) {
+  font-family: "MuseoSansCyrl300Italic";
+  font-size: $size;
+  line-height: $lineHeight;
+}
+@mixin fontMuseo500($size, $lineHeight) {
+  font-family: "MuseoSansCyrl500";
+  font-size: $size;
+  line-height: $lineHeight;
+}
+@mixin fontMuseo500Italic($size, $lineHeight) {
+  font-family: "MuseoSansCyrl500Italic";
+  font-size: $size;
+  line-height: $lineHeight;
+}
+@mixin fontMuseo700($size, $lineHeight) {
+  font-family: "MuseoSansCyrl700";
+  font-size: $size;
+  line-height: $lineHeight;
+}
+@mixin fontMuseo900($size, $lineHeight) {
+  font-family: "MuseoSansCyrl900";
+  font-size: $size;
+  line-height: $lineHeight;
+}
+@mixin fontMuseo900Italic($size, $lineHeight) {
+  font-family: "MuseoSansCyrl900Italic";
+  font-size: $size;
+  line-height: $lineHeight;
+}
+@mixin fontOpenSans($size, $lineHeight) {
+  font-family: "OpenSans";
+  font-size: $size;
+  line-height: $lineHeight;
+}
+@mixin grid($columns, $rows) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+}
+@mixin pseudo($content: "", $display: block, $pos: absolute) {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+/* ***** Color ***** */
+$colorWhite: white;
+$colorBlack: black;
+
+/* ********* grid ********* */

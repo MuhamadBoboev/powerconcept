@@ -1,0 +1,48 @@
+@import "mixins";
+/* ***** Color ***** */
+$colorWhite: white;
+$colorBlack: black;
+
+/* ******** main  ******** */
+body {
+  min-width: 100%;
+  font-family: "OpenSans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: $colorBlack;
+}
+/* ********** container ************ */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex: 0 1;
+}
+._container {
+  max-width: 1440px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+.display-none {
+  display: none;
+}
+
+/* ******************** style **************** */
+@import "header-footer";

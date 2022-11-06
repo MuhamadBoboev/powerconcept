@@ -1,0 +1,55 @@
+.header__main {
+  background: linear-gradient(270deg, #203569 3.39%, #33a648 97.23%);
+  padding: 30px 0px 15px;
+}
+.header__body {
+  @include grid(max-content 1fr max-content, 1fr);
+  grid-gap: 55px;
+}
+.header__bl-nav {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 15px;
+}
+.bl-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-gap: 10px;
+}
+.bl_calc-sity {
+  display: flex;
+  justify-content: space-between;
+}
+.bl-contact__tell {
+  @include fontMuseo500(21px, 125%);
+  color: $colorWhite;
+  font-weight: 400;
+}
+.bl-calc {
+}
+.bl-contact__1 {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 5px;
+}
+.bl-contact__tell {
+}
+.bl-contact__test {
+  @include fontMuseo300(12px, 110%);
+  color: $colorWhite;
+}
+.nav__links {
+  @include grid(1fr 1fr 1fr 1fr 1fr, 1fr);
+  grid-gap: 37px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid $colorWhite;
+}
+.nav__link {
+  @include fontMuseo500(16px, 125%);
+  font-weight: 400;
+  text-transform: uppercase;
+  a {
+    color: $colorWhite;
+  }
+}
