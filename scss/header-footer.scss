@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  grid-gap: 10px;
+  grid-gap: 22px;
 }
 .bl_calc-sity {
   display: flex;
@@ -27,6 +27,27 @@
   font-weight: 400;
 }
 .bl-calc {
+  @include fontMuseo500(16px, 120%);
+  font-weight: 600;
+  color: #33a648;
+  background-color: $colorWhite;
+  text-transform: uppercase;
+  padding: 14px 44px 14px 92px;
+  display: inline-block;
+  position: relative;
+  border-radius: 50px;
+}
+.bl-calc::after {
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 27px;
+  width: 36px;
+  height: 26px;
+  background-image: url(../img/header-footer/Group-209.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .bl-contact__1 {
   display: flex;
@@ -52,4 +73,192 @@
   a {
     color: $colorWhite;
   }
+}
+.header__bl-city {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 8px;
+  border-bottom: 1px solid white;
+}
+.bl-city {
+  @include fontMuseo300(16px, 130%);
+  color: white;
+  padding-right: 140px;
+  position: relative;
+}
+.bl-city::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  bottom: 8px;
+  right: 0;
+
+  border-style: solid;
+  border-width: 9px 5px 0 5px;
+  border-color: #ffffff transparent transparent transparent;
+}
+.header-search__body {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.header-search__bl-nav-pages {
+  display: flex;
+  align-items: flex-end;
+}
+.header-search {
+  display: flex;
+  flex: 0 1 50%;
+  padding-right: 45px;
+}
+.header-search__bl {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.header-search__input {
+  padding: 10px 15px 8px 23px;
+  width: 100%;
+  border-radius: 50px;
+  padding-right: 140px;
+  border: none;
+  outline: 1px solid #33a648;
+}
+.header-search__bl-btn {
+  position: absolute;
+  grid-gap: 7px;
+  top: 0;
+  right: 0;
+  width: max-content;
+  height: 100%;
+  border-radius: 50px;
+  background-color: #33a648;
+  padding: 0px 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include fontMuseo500(16px, 118%);
+  // font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+}
+.header-search__bl-btn__svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/header-footer/search.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.header-search__nav-pages {
+  display: flex;
+  align-items: center;
+  grid-gap: 5px;
+}
+.header-search__nav-page {
+  @include fontMuseo300(12px, 120%);
+}
+.footer {
+  background: linear-gradient(270deg, #203569 3.39%, #33a648 97.23%);
+}
+.footer__body {
+  padding: 48px 0px 84px;
+}
+.footer__block {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 26px;
+}
+.footer__body {
+  @include grid(1fr 1fr 2fr, 1fr);
+  grid-gap: 40px;
+}
+.footer__main-block {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 33px;
+}
+.footer__block-title {
+  @include fontMuseo500(16px, 115%);
+  color: $colorWhite;
+  text-transform: uppercase;
+}
+.footer__item-link {
+  @include fontMuseo300(16px, 130%);
+  color: $colorWhite;
+}
+.footer__items {
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 10px;
+}
+.footer__double-block {
+  @include grid(1fr 1fr, 1fr);
+  grid-gap: 40px;
+}
+.footer__last-block_1 {
+  @include grid(1fr 1fr, 1fr);
+  grid-gap: 40px;
+}
+.footer__double-block_2 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__last-block_2 {
+  @include grid(1fr 1fr, 1fr);
+  grid-gap: 40px;
+}
+.footer__items_1 {
+  @include grid(1fr 1fr, auto);
+}
+.top-line {
+  border-top: 1px solid $colorWhite;
+  padding-top: 30px;
+}
+.footer__l-block {
+  display: flex;
+  align-items: flex-end;
+}
+.footer__l-block__item {
+  // padding: 25% 0 0;
+  width: 37px;
+  height: 36px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  &_1 {
+    background-image: url(../img/header-footer/SSeti_1.svg);
+  }
+  &_2 {
+    background-image: url(../img/header-footer/SSeti_2.svg);
+  }
+  &_3 {
+    background-image: url(../img/header-footer/SSeti_3.svg);
+  }
+  &_4 {
+    background-image: url(../img/header-footer/SSeti_4.svg);
+  }
+}
+.footer__l-block__items {
+  display: flex;
+  grid-gap: 24px;
+}
+.footer__contact {
+  @include fontMuseo300(21px, 150%);
+  color: $colorWhite;
+}
+.footer__contact__text {
+  @include fontMuseo100(12px, 100%);
+  color: $colorWhite;
+}
+.footer__items_contacts {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 25px;
 }

@@ -36,13 +36,35 @@ a {
   flex: 0 1;
 }
 ._container {
-  max-width: 1440px;
+  max-width: 1240px;
   padding: 0px 15px;
   margin: 0 auto;
 }
 .display-none {
   display: none;
 }
-
+.text_h1 {
+  @include fontMuseo500(50px, 120%);
+}
+.text_h2 {
+  @include fontMuseo500(42px, 120%);
+}
+.twxt_h3 {
+  @include fontMuseo500(27px, 120%);
+}
+.text_h4 {
+  @include fontMuseo500(21px, 120%);
+}
+.text {
+  @include fontMuseo300(16px, 130%);
+}
+.text_small {
+  @include fontMuseo300(12px, 115%);
+}
+.btn {
+  @include fontMuseo500(21px, 120%);
+  color: $colorWhite;
+}
 /* ******************** style **************** */
 @import "header-footer";
+@import "main-page";

@@ -1,0 +1,18 @@
+.main__bunner {
+  background: linear-gradient(270deg, #203569 3.39%, #33a648 97.23%);
+  padding: 40px 0px 45px;
+  border-bottom: 2px solid white;
+}
+
+.main__bunner__body {
+  max-width: 400px;
+}
+.main__bunner__title {
+  color: $colorWhite;
+}
+.main__bunner__subtitle,
+.main__bunner__text {
+  color: $colorWhite;
+}
+.main__bunner__button {
+}
