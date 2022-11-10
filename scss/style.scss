@@ -34,6 +34,7 @@ a {
   flex-direction: column;
   overflow: hidden;
   flex: 0 1;
+  padding-top: 50px;
 }
 ._container {
   max-width: 1240px;
@@ -64,6 +65,21 @@ a {
 .btn {
   @include fontMuseo500(21px, 120%);
   color: $colorWhite;
+}
+.rectangle {
+  position: relative;
+  padding-top: 16px;
+}
+.rectangle::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 16px;
+  background: #32599e;
+  border-radius: 0px 0px 20px 20px;
+  display: inline-block;
 }
 /* ******************** style **************** */
 @import "header-footer";
