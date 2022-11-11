@@ -34,7 +34,6 @@ a {
   flex-direction: column;
   overflow: hidden;
   flex: 0 1;
-  padding-top: 50px;
 }
 ._container {
   max-width: 1240px;
@@ -73,10 +72,10 @@ a {
 .rectangle::after {
   position: absolute;
   content: "";
-  top: 0;
+  top: -2px;
   left: 0;
   width: 120px;
-  height: 16px;
+  height: 17px;
   background: #32599e;
   border-radius: 0px 0px 20px 20px;
   display: inline-block;
