@@ -64,6 +64,7 @@ a {
 .btn {
   @include fontMuseo500(21px, 120%);
   color: $colorWhite;
+  font-weight: 600;
 }
 .rectangle {
   position: relative;
@@ -83,3 +84,4 @@ a {
 /* ******************** style **************** */
 @import "header-footer";
 @import "main-page";
+@import "products";
