@@ -48,12 +48,15 @@ a {
 }
 .text_h2 {
   @include fontMuseo500(42px, 120%);
+  font-weight: 600;
 }
-.twxt_h3 {
+.text_h3 {
   @include fontMuseo500(27px, 120%);
+  font-weight: 600;
 }
 .text_h4 {
   @include fontMuseo500(21px, 120%);
+  font-weight: 400;
 }
 .text {
   @include fontMuseo300(16px, 130%);
