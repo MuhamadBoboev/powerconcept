@@ -412,6 +412,7 @@
   @include fontMuseo500(24px, 120%);
   color: $colorWhite;
   padding: 15px;
+  font-weight: 600;
   background-color: transparent;
   display: block;
 }
@@ -1372,4 +1373,73 @@
 .respond-form__text {
   padding-left: 20px;
   display: block;
+}
+.hefte {
+  .p-products1__green,
+  .header__main,
+  .footer_products1 {
+    background: #698fcd;
+  }
+  .main__bunner {
+    background: #698fcd;
+    border-top: 8px solid #698fcd;
+  }
+  .series__bl,
+  .series__bl::after,
+  .series__bl::before {
+    background: #32599e;
+  }
+  .header__main {
+  }
+}
+.h-products {
+  border-top: 8px solid #698fcd;
+}
+.h-products__bl-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.h-products__body {
+  padding-top: 16px;
+  padding-bottom: 60px;
+}
+.h-products__bl-items {
+  padding-top: 38px;
+}
+.h-products__items {
+  @include grid(repeat(4, 1fr), 1fr);
+  grid-gap: 22px;
+}
+.h-product__item {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 16px;
+}
+.h-product__imfo {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+}
+.h-product__img {
+  border-radius: 23px;
+}
+.h-product__title {
+  font-weight: 600;
+}
+.h-product__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.h-product__bl-download {
+  display: inline-block;
+  width: 68px;
+  height: 68px;
+  border-radius: 16px;
+  background-image: url(../img/hefte__save.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 48px;
+  background-color: #32599e;
 }

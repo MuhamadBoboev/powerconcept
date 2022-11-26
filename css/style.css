@@ -1942,6 +1942,7 @@ a {
   line-height: 120%;
   color: white;
   padding: 15px;
+  font-weight: 600;
   background-color: transparent;
   display: block;
 }
@@ -3485,4 +3486,127 @@ a {
 .respond-form__text {
   padding-left: 20px;
   display: block;
+}
+
+.hefte .p-products1__green,
+.hefte .header__main,
+.hefte .footer_products1 {
+  background: #698fcd;
+}
+.hefte .main__bunner {
+  background: #698fcd;
+  border-top: 8px solid #698fcd;
+}
+.hefte .series__bl,
+.hefte .series__bl::after,
+.hefte .series__bl::before {
+  background: #32599e;
+}
+.h-products {
+  border-top: 8px solid #698fcd;
+}
+
+.h-products__bl-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.h-products__body {
+  padding-top: 16px;
+  padding-bottom: 60px;
+}
+
+.h-products__bl-items {
+  padding-top: 38px;
+}
+
+.h-products__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 22px 1fr 22px 1fr 22px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 22px;
+}
+
+.h-products__items > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.h-products__items > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.h-products__items > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+.h-products__items > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+
+.h-product__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-gap: 16px;
+}
+
+.h-product__imfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-gap: 10px;
+}
+
+.h-product__img {
+  border-radius: 23px;
+}
+
+.h-product__title {
+  font-weight: 600;
+}
+
+.h-product__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.h-product__bl-download {
+  display: inline-block;
+  width: 68px;
+  height: 68px;
+  border-radius: 16px;
+  background-image: url(../img/hefte__save.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 48px;
+  background-color: #32599e;
 }
