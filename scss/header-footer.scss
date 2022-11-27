@@ -37,6 +37,9 @@
   position: relative;
   border-radius: 50px;
 }
+.header__img-logo {
+  display: inline-block;
+}
 .bl-calc::after {
   position: absolute;
   content: "";
@@ -62,18 +65,57 @@
 }
 .nav__links {
   @include grid(1fr 1fr 1fr 1fr 1fr, 1fr);
-  grid-gap: 37px;
+  // grid-gap: 37px;
   padding-bottom: 9px;
   border-bottom: 1px solid $colorWhite;
 }
 .nav__link {
+  position: relative;
   @include fontMuseo500(16px, 125%);
   font-weight: 400;
   text-transform: uppercase;
-  a {
-    color: $colorWhite;
+}
+.nav__link__a {
+  padding: 21px 23px;
+  background-color: #33a648;
+  color: $colorWhite;
+  display: inline-block;
+}
+.nav__link.active {
+  .nav__link__a_1 {
+    background-color: red;
   }
 }
+.bl-nav__link {
+  position: absolute;
+  z-index: 10;
+  width: max-content;
+  // display: none;
+}
+.bl-nav__link__body {
+  border-top: 7px solid #62ddb1;
+  padding: 30px;
+  padding-top: 20px;
+  border-radius: 0px 0px 24px 24px;
+}
+.bl-nav__link.active {
+  // display: block;
+}
+.bl-nav__link__body {
+  background-color: $colorWhite;
+}
+.bl-nav__link__items {
+  display: flex;
+  flex-direction: column;
+}
+.bl-nav__link__a {
+  @include fontMuseo300(16px, 130%);
+  text-transform: none;
+  padding: 10px 0;
+  display: inline-block;
+  color: #203569;
+}
+
 .header__bl-city {
   display: flex;
   align-items: flex-end;
@@ -109,6 +151,8 @@
 }
 .header-search {
   display: flex;
+  flex-direction: column;
+  // position: relative;
   flex: 0 1 50%;
   padding-right: 45px;
 }
@@ -124,6 +168,34 @@
   padding-right: 140px;
   border: none;
   outline: 1px solid #33a648;
+}
+.h-search__block {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  display: none;
+  z-index: 10;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  padding: 22px 38px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+}
+.h-search__block.active {
+  display: block;
+}
+.h-search__items {
+  display: flex;
+  flex-direction: column;
+}
+.h-searchI-item {
+  a {
+    padding: 10px 0px;
+    display: inline-block;
+    @include fontMuseo300(20px, 120%);
+    color: $colorBlack;
+  }
 }
 .header-search__bl-btn {
   position: absolute;
@@ -274,7 +346,7 @@
   }
 
   summary {
-    padding: 1rem;
+    padding: 12px;
     cursor: pointer;
     border-radius: 5px;
     background-color: transparent;
