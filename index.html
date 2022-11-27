@@ -57,13 +57,44 @@
                     <a href="#" class="bl-calc">калькулятор</a>
                   </div>
                   <div class="header__bl-city">
-                    <div class="bl-city">Екатеринбург</div>
+                    <div class="bl-city">
+                    <details class="custom-select">
+                      <summary class="radios">
+                        <input type="radio" name="item" id="default" title="Город" checked>
+                        <input type="radio" name="item" id="item1" title="Москва">
+                        <input type="radio" name="item" id="item2" title="Санкт-Петербург">
+                        <input type="radio" name="item" id="item3" title="Новосибирск">
+                        <input type="radio" name="item" id="item4" title="Казань">
+                        <input type="radio" name="item" id="item5" title="Нижний Новгород                        ">
+                      </summary>
+                      <ul class="list">
+                        <li>
+                          <label for="item1">
+                            Москва
+                            <span></span>
+                          </label>
+                        </li>
+                        <li>
+                          <label for="item2">Санкт-Петербург</label>
+                        </li>
+                        <li>
+                          <label for="item3">Новосибирск</label>
+                        </li>
+                        <li>
+                          <label for="item4">Казань</label>
+                        </li>
+                        <li>
+                          <label for="item5">Нижний Новгород </label>
+                        </li>
+                      </ul>
+                    </details>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="header__bl-contacts">
                 <div class="bl-contacts">
-                  <a href="#" class="bl-contact__1">
+                  <a href="tel:88002509748" class="bl-contact__1">
                     <p class="bl-contact__tell">8 800 250 97 48</p>
                     <p class="bl-contact__test">Бесплатные звонки  по России</p>
                   </a>
