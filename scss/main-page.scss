@@ -343,6 +343,7 @@
 .mn-news__text-1 {
   @include fontMuseo500(16px, 120%);
   color: #33a648;
+  font-weight: 600;
 }
 .mn-news__info {
   display: flex;

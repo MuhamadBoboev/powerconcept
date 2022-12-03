@@ -69,6 +69,64 @@ a {
   color: $colorWhite;
   font-weight: 600;
 }
+@media (max-width: 1024px) {
+  .text_h1 {
+    @include fontMuseo500(50px, 120%);
+    font-weight: 600;
+  }
+  .text_h2 {
+    @include fontMuseo500(34px, 120%);
+    font-weight: 600;
+  }
+  .text_h3 {
+    @include fontMuseo500(27px, 120%);
+    font-weight: 600;
+  }
+  .text_h4 {
+    @include fontMuseo500(18px, 120%);
+    font-weight: 400;
+  }
+  .text {
+    @include fontMuseo300(16px, 130%);
+  }
+  .text_small {
+    @include fontMuseo300(12px, 115%);
+  }
+  .btn {
+    @include fontMuseo500(21px, 120%);
+    color: $colorWhite;
+    font-weight: 600;
+  }
+}
+@media (max-width: 700px) {
+  .text_h1 {
+    @include fontMuseo500(32px, 120%);
+    font-weight: 600;
+  }
+  .text_h2 {
+    @include fontMuseo500(34px, 120%);
+    font-weight: 600;
+  }
+  .text_h3 {
+    @include fontMuseo500(22px, 120%);
+    font-weight: 600;
+  }
+  .text_h4 {
+    @include fontMuseo500(16px, 120%);
+    font-weight: 400;
+  }
+  .text {
+    @include fontMuseo300(14px, 130%);
+  }
+  .text_small {
+    @include fontMuseo300(10px, 115%);
+  }
+  .btn {
+    @include fontMuseo500(16px, 120%);
+    color: $colorWhite;
+    font-weight: 600;
+  }
+}
 .rectangle {
   position: relative;
   padding-top: 16px;
@@ -88,3 +146,4 @@ a {
 @import "header-footer";
 @import "main-page";
 @import "products";
+@import "device";

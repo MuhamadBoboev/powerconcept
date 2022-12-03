@@ -338,6 +338,7 @@
   @include fontMuseo500(16px, 115%);
   color: $colorWhite;
   text-transform: uppercase;
+  font-weight: 600;
 }
 .footer__item-link {
   @include fontMuseo300(16px, 130%);
@@ -676,6 +677,13 @@
   .header__bl-nav {
     order: 1;
   }
+  .footer__body {
+    @include grid(1fr 1fr, auto);
+  }
+  .footer__main-block_3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 .h-mobile {
   background: linear-gradient(270deg, #203569 3.39%, #33a648 97.23%);
@@ -687,8 +695,8 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding: 12px 0;
-  // padding-right: 70px;
+  padding: 11px 0 9px 0;
+  padding-right: 70px;
 }
 
 .h-mobile__cacl_1 {
@@ -723,12 +731,7 @@
   .header__bl-nav {
     order: 1;
   }
-  .page {
-    display: none;
-  }
-  .footer {
-    display: none;
-  }
+
   .header__body {
     display: flex;
     flex-direction: column;
@@ -779,6 +782,24 @@
   .nav__link:hover .nav__link__a {
     border-radius: 0;
     background: none;
+  }
+  .m-footer__body {
+    padding: 20px 0;
+    @include grid(1fr 1fr, auto);
+    grid-gap: 20px;
+    & > div {
+      text-align: center;
+    }
+
+    .footer__contact {
+      font-size: 16px;
+    }
+    .text {
+      font-size: 14px;
+    }
+    .footer__contact__text {
+      font-size: 8px;
+    }
   }
 }
 @import "popup";
