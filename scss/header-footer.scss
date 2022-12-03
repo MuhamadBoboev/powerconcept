@@ -660,3 +660,125 @@
     background-image: url(../img/bl-l__first_2.svg);
   }
 }
+.ds-700a {
+  display: none;
+}
+.ds-700n {
+  display: inherit;
+}
+@media (max-width: 1240px) {
+  .header__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-gap: 10px;
+  }
+  .header__bl-nav {
+    order: 1;
+  }
+}
+.h-mobile {
+  background: linear-gradient(270deg, #203569 3.39%, #33a648 97.23%);
+}
+.h-mobile__img {
+}
+.h-mobile__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 12px 0;
+  // padding-right: 70px;
+}
+
+.h-mobile__cacl_1 {
+  padding: 5px 11px 6px 32px;
+  font-size: 8px;
+  display: inline-block;
+  height: max-content;
+}
+.h-mobile__cacl_1::after {
+  // background-size: 10px;
+  top: 4px;
+  left: 11px;
+  width: 13px;
+  height: 10px;
+}
+
+@media (max-width: 700px) {
+  .ds-700a {
+    display: inherit;
+  }
+  .ds-700n {
+    display: none;
+  }
+  .header__body {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 10px;
+  }
+  .header__bl-contacts {
+    order: 1;
+  }
+  .header__bl-nav {
+    order: 1;
+  }
+  .page {
+    display: none;
+  }
+  .footer {
+    display: none;
+  }
+  .header__body {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav__link__a {
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .header__bl-nav {
+    grid-gap: 18px;
+  }
+  .nav__link__a {
+    display: block;
+    text-align: center;
+  }
+  .header__img-logo img {
+    width: 260px;
+  }
+  .header__bl-contacts {
+    grid-gap: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .bl-city {
+    display: flex;
+    justify-content: center;
+  }
+  .bl-city details {
+    width: 183px;
+  }
+  .bl-contacts {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 30px;
+  }
+  .bl-contact__1 {
+    order: 1;
+  }
+  .header-search {
+    padding: 0;
+  }
+  .header-search__bl-nav-pages {
+    align-items: start;
+  }
+  .nav__link:hover .bl-nav__link {
+    display: none;
+  }
+  .nav__link:hover .nav__link__a {
+    border-radius: 0;
+    background: none;
+  }
+}
+@import "popup";

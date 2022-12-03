@@ -3,9 +3,9 @@ window.onload = function () {
   const searchInput = document.querySelector(".header-search__bl");
   const searchValue = document.querySelector(".header-search__input");
   const searchBlock = document.querySelector(".h-search__block");
-
-  const navLinks = document.querySelectorAll(".nav__link");
-  // const navLinkBlock = navLinks
+  const navLinks = document.querySelectorAll(".nav__link__a");
+  const BurgerBtns = document.querySelectorAll(".header__burger");
+  const HeaderPopup = document.querySelector(".popup");
 
   searchInput.addEventListener("keydown", (e) => {
     if (searchValue.value > "") {
@@ -15,24 +15,14 @@ window.onload = function () {
       searchBlock.classList.remove("active");
     }
   });
-
-  window.addEventListener("click", (e) => {
-    console.log(e.target);
-    if (e.target == !document.querySelector("header__bl-logo")) {
-      console.log("asdsad");
-    }
-  });
-  navLinks.forEach((el) => {
-    // console.log(tar.target);
-    // console.log("asasdsda", el);
-    // console.log(tar.target == document.querySelector(".nav__link__a"));
-    el.addEventListener("click", (e) => {
-      // console.log(e.target);
-      // e.classList.add("active");
-      // console.log(e.querySelector(".bl-nav__link"));
-      // el.querySelector(".bl-nav__link").classList.toggle("active");
+  BurgerBtns.forEach((e) => {
+    e.addEventListener("click", (e) => {
+      HeaderPopup.classList.toggle("active");
     });
-    // el.classList.add("active");
-    // el.querySelector(".bl-nav__link").classList.add("active");
+  });
+  navLinks.forEach((e) => {
+    e.addEventListener("click", (el) => {
+      e.parentElement.querySelector(".bl-nav__link").classList.toggle("active");
+    });
   });
 };

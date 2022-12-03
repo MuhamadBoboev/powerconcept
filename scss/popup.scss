@@ -1,0 +1,134 @@
+.header__burger {
+  display: block;
+  top: 0;
+  right: 0;
+  background-color: red;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.h-burger {
+  position: absolute;
+  height: 2px;
+  top: 50%;
+  width: 20px;
+  background-color: $colorWhite;
+}
+.h-burger::after {
+  position: absolute;
+  content: "";
+  top: 6px;
+  width: 100%;
+  height: 2px;
+  background-color: $colorWhite;
+}
+.h-burger::before {
+  position: absolute;
+  content: "";
+  top: -6px;
+  width: 100%;
+  height: 2px;
+  background-color: $colorWhite;
+}
+.h-mobile__burger {
+  // position: absolute;
+  // top: 9px;
+  // right: 11px;
+  // z-index: 99;
+}
+.popup {
+  display: block;
+  position: fixed;
+
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  z-index: 12;
+  overflow-y: auto;
+  transition: all 0.8s ease 0s;
+}
+.popup.active {
+  display: block;
+}
+
+.popup__body {
+  display: flex;
+  flex-direction: column;
+}
+.popup .h-mobile__top {
+  padding: 15px;
+}
+.popup__top {
+  background: linear-gradient(270deg, #203569 3.39%, #33a648 97.23%);
+}
+.p__popup {
+  background-color: $colorWhite;
+  padding: 13px 15px;
+}
+.popup .nav__links {
+  display: flex;
+  flex-direction: column;
+}
+.popup .nav__link__a {
+  text-align: start;
+}
+.popup .header-search__input {
+  padding-right: 68px;
+}
+.popup .nav__link__a {
+  color: #555555;
+}
+.popup .nav__link__a {
+  padding: 10px 0px;
+}
+.popup .header__bl-nav {
+  padding-top: 20px;
+}
+.popup .bl-nav__link.active {
+  display: inherit;
+}
+.popup .bl-nav__link {
+  position: static;
+  width: 100%;
+}
+.popup .bl-nav__link__body {
+  display: flex;
+  flex-direction: column;
+}
+.popup .bl-nav__link__items {
+  @include grid(1fr 1fr, auto);
+}
+
+.popup {
+  .bl-nav__link {
+    box-shadow: none;
+  }
+  .bl-nav__link__bl-items {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 17px;
+  }
+  .bl-col_1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .bl-nav__link__body {
+    padding: 0;
+  }
+  .bl-nav__link__a {
+    padding: 2px 0px;
+    font-size: 14px;
+  }
+  .bl-nav__link__items_2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
