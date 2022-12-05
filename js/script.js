@@ -1,16 +1,16 @@
 "use strict";
 window.onload = function () {
-  const searchInput = document.querySelector(".header-search__bl");
-  const searchValue = document.querySelector(".header-search__input");
-  const searchBlock = document.querySelector(".h-search__block");
-  const navLinks = document.querySelectorAll(".nav__link__a");
-  const BurgerBtns = document.querySelectorAll(".header__burger");
-  const HeaderPopup = document.querySelector(".popup");
-  const searchLink = document.querySelector(".header-search__bl-btn");
-  const mainPage = document.querySelector(".page");
-  const pageSearch = document.querySelector(".page-search");
+  let searchInput = document.querySelector(".header-search__bl");
+  let searchValue = document.querySelector(".header-search__input");
+  let searchBlock = document.querySelector(".h-search__block");
+  let navLinks = document.querySelectorAll(".nav__link__a");
+  let BurgerBtns = document.querySelectorAll(".header__burger");
+  let HeaderPopup = document.querySelector(".popup");
+  let searchLink = document.querySelector(".header-search__bl-btn");
+  let mainPage = document.querySelector(".page");
+  let pageSearch = document.querySelector(".page-search");
   let switchBtn = document.querySelector(".switch-btn");
-  const body = document.body;
+  let body = document.body;
 
   searchInput.addEventListener("keydown", (e) => {
     if (searchValue.value > "") {
@@ -62,8 +62,10 @@ window.onload = function () {
         .querySelector(".header-search__close")
         .classList.remove("active");
     });
-  switchBtn.addEventListener("click", (e) => {
-    // console.log(switchBtn);
-    switchBtn.classList.toggle("switch-on");
-  });
+  if (switchBtn) {
+    switchBtn.addEventListener("click", (e) => {
+      // console.log(switchBtn);
+      switchBtn.classList.toggle("switch-on");
+    });
+  }
 };

@@ -2532,6 +2532,14 @@ body.active {
   background: #4bbe95;
 }
 
+.hefte .header_products1 .header-search__bl-btn {
+  background: #698fcd;
+}
+
+.header_products1 .header-search__bl-btn {
+  background: #4bbe95;
+}
+
 .p-products1__green {
   background: #4bbe95;
 }
@@ -3754,6 +3762,10 @@ body.active {
 
 .company .mn-products {
   position: relative;
+}
+
+.company .main__bunner {
+  background-color: #33a648;
 }
 
 .company .mn-products::before {
