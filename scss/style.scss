@@ -71,7 +71,7 @@ a {
 }
 @media (max-width: 1024px) {
   .text_h1 {
-    @include fontMuseo500(50px, 120%);
+    @include fontMuseo500(42px, 120%);
     font-weight: 600;
   }
   .text_h2 {
@@ -79,7 +79,7 @@ a {
     font-weight: 600;
   }
   .text_h3 {
-    @include fontMuseo500(27px, 120%);
+    @include fontMuseo500(28px, 120%);
     font-weight: 600;
   }
   .text_h4 {

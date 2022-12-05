@@ -6,6 +6,10 @@ window.onload = function () {
   const navLinks = document.querySelectorAll(".nav__link__a");
   const BurgerBtns = document.querySelectorAll(".header__burger");
   const HeaderPopup = document.querySelector(".popup");
+  const searchLink = document.querySelector(".header-search__bl-btn");
+  const mainPage = document.querySelector(".page");
+  const pageSearch = document.querySelector(".page-search");
+  let switchBtn = document.querySelector(".switch-btn");
   const body = document.body;
 
   searchInput.addEventListener("keydown", (e) => {
@@ -29,5 +33,37 @@ window.onload = function () {
         .classList.toggle("active");
       e.classList.toggle("active");
     });
+  });
+  searchLink.addEventListener("click", (e) => {
+    if (searchValue.value > "") {
+      pageSearch.classList.toggle("active");
+      searchBlock.classList.remove("active");
+      mainPage.classList.toggle("noActive");
+      document
+        .querySelector(".header-search__bl-nav-pages")
+        .classList.add("noActive");
+      document.querySelector(".header-search").style = "flex: 0 1 100%";
+      document
+        .querySelector(".header-search__close")
+        .classList.toggle("active");
+    }
+  });
+  document
+    .querySelector(".header-search__close")
+    .addEventListener("click", (e) => {
+      pageSearch.classList.remove("active");
+      searchBlock.classList.remove("active");
+      mainPage.classList.remove("noActive");
+      document
+        .querySelector(".header-search__bl-nav-pages")
+        .classList.remove("noActive");
+      document.querySelector(".header-search").style = "flex: 0 1 50%";
+      document
+        .querySelector(".header-search__close")
+        .classList.remove("active");
+    });
+  switchBtn.addEventListener("click", (e) => {
+    // console.log(switchBtn);
+    switchBtn.classList.toggle("switch-on");
   });
 };
