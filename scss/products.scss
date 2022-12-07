@@ -52,6 +52,9 @@
 .p-products1__bunner {
   background: #4bbe95;
 }
+.header_products1 {
+  z-index: 2;
+}
 .hefte .header_products1 {
   .header-search__bl-btn {
     background: #698fcd;
@@ -81,9 +84,13 @@
 .p-products1__s-why::before {
   display: none;
 }
+.swiper-wrapper {
+  // overflow: hidden;
+}
 .p-products1__s-why__items {
-  @include grid(repeat(4, 1fr), 1fr);
-  grid-gap: 20px;
+  // @include grid(repeat(4, 1fr), 1fr);
+  // grid-gap: 20px;
+  display: flex;
 }
 
 .p-products1__why__ball {
@@ -127,6 +134,19 @@
 }
 .p-products1__why__next {
   background-image: url(../img/why-next.svg);
+}
+.products-sw {
+  position: relative;
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 95% !important;
+  }
+  .swiper-button-next {
+    background-image: url(../img/next_2.svg);
+  }
+  .swiper-button-prev {
+    background-image: url(../img/prev_2.svg);
+  }
 }
 
 .s-batteries {
@@ -928,6 +948,34 @@
   width: 100%;
   height: 30%;
   z-index: -1;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  top: 95% !important;
+}
+.swiper-button-prev {
+  width: 43px !important;
+  height: 20px !important;
+  background-image: url(../img/prev.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  &::after {
+    display: none;
+  }
+}
+.swiper-scrollbar-drag {
+  background: linear-gradient(270deg, #203569 3.39%, #33a648 97.23%) !important;
+  // background-color: red;
+}
+.swiper-button-next {
+  width: 43px !important;
+  height: 20px !important;
+  background-image: url(../img/next.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  &::after {
+    display: none;
+  }
 }
 .company__s-principles {
   padding-top: 40px;

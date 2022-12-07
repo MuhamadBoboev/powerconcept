@@ -2,6 +2,12 @@
   .calc__table {
     overflow: auto;
   }
+  .s-batteries__items {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .table-pos {
+    overflow: auto;
+  }
   .h-products__items {
     @include grid(1fr 1fr 1fr, auto);
     grid-gap: 25px;
@@ -14,6 +20,19 @@
   .mn-products__items,
   .mn-brands__items {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .p-cards__item-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .series-why__body {
+    display: flex;
+    flex-direction: column;
+  }
+  .s-batteries__items {
+    display: flex;
+    grid-gap: 0px;
   }
   .mn_areas__items {
     grid-template-columns: repeat(4, 1fr);
@@ -99,11 +118,34 @@
   }
 }
 @media (max-width: 700px) {
+  .series-why_img {
+    width: 100%;
+    height: auto;
+  }
+  .series-why__bl-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .battary_contact {
+    .p-products1__bunner__mini-img {
+      display: none;
+    }
+  }
+  .s-batteries__img {
+    width: 100%;
+    height: auto;
+  }
+  .p-cards__item-link {
+    // padding-left: 30px;
+    // font-size: 9px;
+  }
   .hefte {
     .h-products__items {
       @include grid(1fr, auto);
       grid-gap: 25px;
     }
+
     .h-product__bl-download {
       width: 30px;
       height: 30px;
@@ -130,10 +172,58 @@
       font-size: 14px;
     }
   }
-
+  .s-batteries__items {
+    display: flex;
+    grid-gap: 0px;
+  }
+  .mn-products__footer {
+    display: none;
+  }
   .calc-right__items {
     @include grid(1fr 1fr, auto);
     grid-gap: 10px;
+  }
+  .mn-brands__item-body {
+    padding-bottom: 60px;
+  }
+  .mn-brands__body {
+    padding-bottom: 80px;
+  }
+  .swiper-container {
+    .mn-products__item__btn {
+      font-size: 10px;
+    }
+  }
+  .product .mn-products__items {
+    display: flex;
+    grid-gap: 0px;
+  }
+  .mn-clients__items {
+    display: flex;
+    grid-gap: 0;
+  }
+  .mn-brands__item-body {
+    padding-top: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .mn-brands__item-body::after {
+    width: 115px;
+    height: 100px;
+    bottom: -7px;
+    right: 13px;
+  }
+  .mn-products__item__bl-img {
+    width: max-content;
+    height: max-content;
+  }
+  .mn-products__img {
+    width: 163px;
+    height: 163px;
+  }
+  .mn-products__ball {
+    width: 154px;
+    height: 154px;
   }
   .calc__btn {
     padding: 20px 0;
@@ -141,6 +231,10 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+  }
+  .mn-brands__items {
+    display: flex;
+    grid-gap: 0;
   }
   .calc-footer.ds-700a {
     background-color: $colorWhite;

@@ -99,9 +99,9 @@
   grid-gap: 45px;
 }
 .mn-products__items {
-  @include grid(1fr 1fr 1fr, auto);
-  grid-row-gap: 60px;
-  grid-column-gap: 40px;
+  // @include grid(1fr 1fr 1fr, auto);
+  // grid-row-gap: 60px;
+  // grid-column-gap: 40px;
 }
 .text_h2_mn-products {
   color: #32599e;
@@ -137,6 +137,11 @@
 }
 .text_h4_mn-products {
   color: #32599e;
+}
+.ds-700n {
+  .mn-products__items {
+    @include grid(1fr 1fr 1fr, auto);
+  }
 }
 .mn-products__item__text {
   color: #203569;
@@ -400,4 +405,7 @@
   left: 20px;
   width: max-content;
   height: auto;
+}
+.gallery-top_1 {
+  overflow: hidden;
 }
