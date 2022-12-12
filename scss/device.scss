@@ -20,6 +20,7 @@
   .mn-products__items,
   .mn-brands__items {
     grid-template-columns: 1fr 1fr 1fr;
+    // grid-gap: 30px;
   }
   .p-cards__item-img {
     width: 100%;
@@ -433,6 +434,7 @@
     }
     .mn-products__items {
       grid-template-columns: 1fr 1fr;
+      // grid-gap: 30px;
     }
     .s-areas__footer {
       display: none;

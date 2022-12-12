@@ -141,6 +141,7 @@
 .ds-700n {
   .mn-products__items {
     @include grid(1fr 1fr 1fr, auto);
+    grid-gap: 30px;
   }
 }
 .mn-products__item__text {

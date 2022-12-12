@@ -1968,10 +1968,11 @@ body.active {
 .ds-700n .mn-products__items {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
+  grid-gap: 30px;
 }
 
 .ds-700n .mn-products__items > *:nth-child(1) {
@@ -1981,12 +1982,12 @@ body.active {
 
 .ds-700n .mn-products__items > *:nth-child(2) {
   -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  -ms-grid-column: 3;
 }
 
 .ds-700n .mn-products__items > *:nth-child(3) {
   -ms-grid-row: 1;
-  -ms-grid-column: 3;
+  -ms-grid-column: 5;
 }
 
 .mn-products__item__text {
@@ -2535,7 +2536,7 @@ body.active {
 }
 
 .header_products1 {
-  z-index: 2;
+  z-index: 4;
 }
 
 .hefte .header_products1 .header-search__bl-btn {
